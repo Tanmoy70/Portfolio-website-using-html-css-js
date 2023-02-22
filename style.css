@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+/* Index.html page's CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  background-color: rgb(245, 243, 243);
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+  padding: 45px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 30px;
+  padding: 33px 0;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 90vw;
+}
+
+.container {
+  display: flex;
+}
+
+.infoContainer {
+  /* background-color: green; */
+  height: 58vh;
+  width: 80vw;
+  margin: 144px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.hello {
+  font-size: 65px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.name {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.about {
+  font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.moreabout {
+  font-size: 22px;
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 23px;
+}
+
+.buttons button {
+  padding: 9px 10px;
+  border-radius: 22px;
+  color: white;
+  background: dodgerblue;
+  font-weight: bold;
+  font-size: 21px;
+  margin: 34px 3px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.buttons button:hover {
+  color: dodgerblue;
+  background: white;
+}
+
+.devPic img {
+  height: 58vh;
+  margin-right: 40px;
+}
+
+/* Contact.html page's CSS */
+
+.btn {
+  padding: 7px 13px;
+  margin-top: 10px;
+  border-radius: 22px;
+  color: white;
+  background: dodgerblue;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.btn:hover {
+  color: dodgerblue;
+  background: white;
+}
+
+.contact-button:hover {
+  color: dodgerblue;
+  background: white;
+}
+
+.contactForm {
+  padding: 0 34px;
+  font-family: "Montserrat", sans-serif;
+  margin: 88px;
+}
+
+.contactForm h1 {
+  font-family: "Fira Sans", sans-serif;
+  text-align: left;
+  padding: 12px 0;
+}
+
+.form-group {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  /* width: 25vw; */
+  border-radius: 10px;
+}
+
+.form-control {
+  /* width: 26vw; */
+  border-radius: 5px;
+  margin-top: 6px;
+  padding: 3px;
+}
+
+/* .contactForm form {
+  margin: 0 30px;
+} */
+
+.form-check {
+  margin: 10px 0;
+}
+
+#emailHelp {
+  font-size: 11px;
+  color: midnightblue;
+  margin: 0 5px;
+  margin-top: -15px;
+}
+
+/* blog.html page's CSS */
+
+.blogContainer {
+  margin: 88px;
+}
+
+.blogItem {
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blogContainer h1 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 20px;
+}
+
+.blogItem p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* intro.html page */
+
+.intro {
+  margin: 88px;
+}
+
+.intro h2 {
+  font-family: "Fira Sans", sans-serif;
+  margin: 12px;
+}
+
+.intro p {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 12px;
+}
+
+.skillContainer {
+  padding: 12px;
+}
+
+.skillItems {
+  display: flex;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+.skill {
+  height: 6px;
+  width: 265px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.hundred {
+  width: 265px;
+  background-color: blueviolet;
+}
+
+.fifty {
+  width: 125px;
+  background-color: green;
+}
+
+.t5 {
+  width: 75px;
+  background-color: violet;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+#cro {
+  margin-left: 182px;
+}
+
+/* Responsiveness */
+
+.sidebarGo {
+  transform: translate(-443px, 0);
+  position: absolute;
+}
+
+@media (max-width: 843px) {
+  * {
+    /* background-color: rgb(214, 83, 83); */
+  }
+  */ .sidebar {
+    transform: translate(-443px, 0);
+    position: absolute;
+  }
+
+  .devPic img {
+    margin-right: -100px;
+  }
+  #cro {
+    margin-left: 197px;
+  }
+  .infoContainer {
+    height: 62vh;
+    width: 80vw;
+  }
+  .devPic {
+    display: none;
+  }
+  .intro,
+  .blogContainer,
+  .contactForm {
+    margin: 50px 8px;
+  }
+  .devInfo {
+    font-size: 10px;
+  }
+}
